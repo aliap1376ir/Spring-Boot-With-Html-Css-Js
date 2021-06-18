@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>خوش آمدید</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="css/my-style.css"/>
+        <script src="js/bootstrap.bundle.js"></script>
+    </head>
+    <body>
+        <div class="container-xl">
+            <div class="h3">
+                <p th:text="'سلام , ' + ${name} + '!'"></p>
+            </div>
+            <form action="/">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <Button class="btn btn-danger" type="submit">بازگشت</Button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

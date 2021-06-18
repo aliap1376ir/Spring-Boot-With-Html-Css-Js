@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>سلام دنیا</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="css/my-style.css"/>
+        <script src="js/bootstrap.bundle.js"></script>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>سلام من با بوت استرپ ۵.۰.۱ اجرا شده ام.</h1>
+        </div>
+        <div class="container-xl">
+            <div class="card">
+                <form action="/greeting" method="get">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">نام</label>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"  placeholder="نام" required/>
+                        <div id="nameHelp" class="form-text">جهت ورود به صفحه خوش آمد نام خود را وارد کنید.</div>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <Button class="btn btn-outline-primary" type="submit">رفتن به صفحه خوش‌آمد گویی</Button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
